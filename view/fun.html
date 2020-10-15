@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
+<title>Lam cho Thi</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<script language="javascript">
+var n=1;
+var w=Math.floor(screen.availWidth/2);
+var h=screen.availHeight;
+function no()
+{
+	let btn=document.getElementById("btn2");
+	if(n<10)
+	{
+	btn.style.marginTop=randomInteger(50,h-100)+"px";
+	btn.style.marginLeft=randomInteger(-w+70,0)+"px";
+	}
+	else{
+	btn.style.marginTop="0px";
+	btn.style.marginLeft="0px";
+	btn.innerHTML="YES";
+	btn.style.backgroundColor="#337ab7";
+	}
+	n+=1;
+}
+function no3()
+{
+	if(n>=10)
+	{
+		return document.getElementById("yes").click();
+	}
+}
+function no2()
+{
+	let btn=document.getElementById("btn2");
+	btn.innerHTML="NO";
+	btn.style.backgroundColor="#d9534f";
+}
+function randomInteger(a, b) {
+    return Math.floor(Math.random() * (b - a)) + a+1;
+}
+</script>
+</head>
+<style type="text/css">
+	h1{
+		font-size: 50px;
+	}
+	button{
+		font-size: 30px;
+	}
+	.lightbox
+{
+	position:fixed;
+	z-index:99;
+	display:none;
+	width:100%;
+	height:100%;
+	top: 0%;
+	left:0%;
+	background:rgb(0,0,0,0.5);
+	
+}
+.lightbox:target
+{
+	display:block;
+}
+.lightbox img
+{
+	border-radius: 25px;
+	max-height:85%;
+	max-width:80%;
+	margin-top: 45px;
+}
+/*#btn2:hover{
+	display: none;
+}*/
+</style>
+<body>
+	<div class = "container-fluid text-center">
+		<h1>DO YOU LOVE KISSING ME?</h1>
+		<div class="row">
+		<div class="col-xs-6">
+		<a href="#img1" id="yes"><button class= "btn btn-primary btn-block" id="btn1">YES</button></a>
+		</div>
+		<div class="col-xs-6">
+		<button class= "btn btn-danger btn-block" id="btn2" onmouseover="no()" onmouseout="no2()" onclick="no3()">NO</button>
+		</div>
+		<section id="lightbox">
+		<a href="#_" id="img1" class="lightbox">
+		<img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.0-0/p180x540/117122821_1563189943842522_4132933014354168551_o.jpg?_nc_cat=108&_nc_sid=730e14&_nc_ohc=AEDwKyGkHNMAX-5zjdh&_nc_ht=scontent.fsgn2-3.fna&tp=-6&oh=c87db75709c845dfbd9b30cc7dd2a7ae&oe=5F547806" />
+		</a>
+		</section>
+		</div>
+	</div>
+
+</body>
+</html>
