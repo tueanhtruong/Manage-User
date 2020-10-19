@@ -1,11 +1,13 @@
+const md5 = require('md5');
 const db = require('../db.js');
+
 module.exports = {
 	login : function(req,res){
 		res.render('auth');
 	},
 	postlogin : function(req,res){
 		var email = req.body.email;
-		var pass = req.body.pass;
+		var pass = md5(req.body.pass);
 
 		var user = db.get("users").find({email:email}).value();
 		if(!user){
