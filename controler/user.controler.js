@@ -25,7 +25,6 @@ module.exports = {
 	res.render('view2',{users:result});
 },
 	"getcreate": function (req,res){
-	console.log("view3");
 	res.render('view3');
 },
 	"postcreate": function (req,res){
