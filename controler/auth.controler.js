@@ -24,7 +24,9 @@ module.exports = {
 			});
 			return;
 		}
-		res.cookie("UserID",user.id);
+		res.cookie("UserID",user.id,{
+			signed:true
+		});
 		res.redirect('/user');
 	}
 };

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 
 
 
-app.use(cookieParser());
+app.use(cookieParser(process.env.SESSION_PASS));
 
 
 app.set('view engine','pug');
