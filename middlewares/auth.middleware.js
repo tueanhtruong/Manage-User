@@ -7,8 +7,8 @@ module.exports = {
 		}
 		var user = db.get('users').find({id:req.signedCookies.UserID}).value();
 		if(!user){
-			res.redirect('/auth/login',{
-				errors:['You must login to access']
+			res.render('auth.pug',{
+				errors:["You must login to access"]
 			});
 			return;
 		}

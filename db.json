@@ -3,41 +3,26 @@
     {
       "name": "Mai Thi",
       "age": "19",
-      "id": "aJ4kMm_58",
+      "id": "aJ4kMm_59",
       "email": "tueleesin",
-      "password": "aa1bc6d6d2125c900a1b3428d9d6ee69"
-    },
-    {
-      "name": "Manh An",
-      "age": "-10",
-      "id": "jjds632$5",
-      "email": "thilovebaby",
-      "password": "f7ef0fc4fa1d1a95f5811360681012e5"
-    },
-    {
-      "name": "Mai Anh",
-      "age": "18",
-      "id": "4qqgWzm3C"
+      "password": "aa1bc6d6d2125c900a1b3428d9d6ee69",
+      "avatar": "../uploads/eaf7752fc97356a23d91cd3d54b2557c"
     },
     {
       "name": "Anh Thi",
       "age": "20",
-      "id": "nXYszZ-Dz"
-    },
-    {
-      "name": "Anh Mai",
-      "age": "19",
-      "id": "5ySIT8LTI"
+      "email": "tueleesin123",
+      "password": "aa1bc6d6d2125c900a1b3428d9d6ee69",
+      "id": "XRb6d7BJW",
+      "avatar": "../uploads/eaf7752fc97356a23d91cd3d54b2557c"
     },
     {
       "name": "Thi Thi",
       "age": "20",
-      "id": "2o9H8kBdz"
-    },
-    {
-      "name": "Thi Anh",
-      "age": "21",
-      "id": "R0Y4Gn6Jp"
+      "email": "tueleesinewqew",
+      "password": "366db5dac74b332447ec5b133e63cd71",
+      "id": "6bmDlAWx_",
+      "avatar": "..\\uploads\\c29c52b98a1f8ff7052e19b67daae1fd"
     }
   ]
 }
