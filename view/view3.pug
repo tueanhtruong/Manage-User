@@ -7,19 +7,19 @@ block content
 			.alert.alert-danger= error
 	form(action="/user/create", method="POST",enctype="multipart/form-data")
 		.form-group.row
-			lable(for="name").col-sm-2 NAME
+			label(for="name").col-sm-2 NAME
 			input(type="text",name="name",value=values?values.name:"").form-control.col-sm-10#name
 		.form-group.row
-			lable(for="age").col-sm-2 AGE
+			label(for="age").col-sm-2 AGE
 			input(type="text", name="age",value=values?values.age:"").form-control.col-sm-10#age
 		.form-group.row
-			lable(for="email").col-sm-2 EMAIL
+			label(for="email").col-sm-2 EMAIL
 			input(type="text", name="email",value=values?values.email:"").form-control.col-sm-10#email
 		.form-group.row
-			lable(for="pass").col-sm-2 PASSWORD
+			label(for="pass").col-sm-2 PASSWORD
 			input(type="password", name="password",value=values?values.password:"").form-control.col-sm-10#pass
 		.form-group.row
-			lable(for="age").col-sm-2 AVATAR
+			label(for="age").col-sm-2 AVATAR
 			input(type="file", name="avatar",).form-control-file.col-sm-10#age
 		button(type="submit").btn.btn-primary SUBMIT
 			svg.bi.bi-cloud-upload-fill.ml-2(width='2em', height='2em', viewbox='0 0 16 16', fill='currentColor', xmlns='http://www.w3.org/2000/svg')
